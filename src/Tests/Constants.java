@@ -1,13 +1,18 @@
 package Tests;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.apache.commons.io.FileUtils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
@@ -40,7 +45,9 @@ public class Constants{
         }
     }
     
- 
+    
+  
+       
 
     //method for WebDriverWait until object is clickable
     public void waitUntilClickable(WebDriver driver, int seconds, WebElement element){
@@ -71,6 +78,18 @@ public class Constants{
             e.printStackTrace();
         }
     }
+    
+    public void takeScreenshot(WebDriver driver, String path) {
+		try {
+			TakesScreenshot scr = ((TakesScreenshot)driver);
+			File screenshotFile = scr.getScreenshotAs(OutputType.FILE);
+			File finalFile = new File(path);
+			FileUtils.copyFile(screenshotFile,finalFile);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
 
     //method to read property file
     public String readPropFile(String value){

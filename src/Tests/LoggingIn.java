@@ -2,6 +2,8 @@ package Tests;
 
 import java.util.Iterator;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
 
 import PageObjects.*;
 
@@ -37,6 +40,7 @@ public class LoggingIn extends Constants{
 			
 			LoginPage loginPage = new LoginPage(driver);
 			HomePage homeMenu = new HomePage(driver);
+			CPQHomePage cpHome = new CPQHomePage(driver);
 			
 			cpq.waitUntilVisible(driver, 60, loginPage.username);
 			loginPage.username.sendKeys(cpq.readPropFile("username"));
@@ -121,20 +125,39 @@ public class LoggingIn extends Constants{
              
              cpq.waitUntilClickable(driver, 60, homeMenu.testNam);
              homeMenu.testNam.click();
+             
              try {
-  				Thread.sleep(1000);
+  				Thread.sleep(5000);
   			} catch (InterruptedException e) {
   				e.printStackTrace();
   			}
              
-             cpq.waitUntilVisible(driver, 60, homeMenu.Quotes);
-             //cpq.waitUntilClickable(driver, 60, homeMenu.Quotes);
-             homeMenu.Quotes.click();
-            
+             
+             cpq.waitUntilClickable(driver, 60, homeMenu.Quotes);
+             homeMenu.Quotes.click();            
+             try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e1) {
+				e1.printStackTrace();
+			}
+             
+             cpq.waitUntilClickable(driver, 60, homeMenu.goToCPQ);
+             homeMenu.goToCPQ.click();
+             
+             //cpq.waitUntilClickable(driver, 60,);
+             
+             try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+             
+             takeScreenshot(driver, "/Users/himrekha/eclipse-workspace/FlintAutomation/CPQ.png");
+		
              Assert.assertTrue(homeMenu.feed.isDisplayed());
-		
-		
 	}
+
+	
 	
 	
 

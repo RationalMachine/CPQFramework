@@ -38,8 +38,11 @@ public class HomePage {
 	public WebElement testNam;
 	
 	//@FindBy(xpath = "//div[@role='Main']//li[@class='sapUiUx3NavBarItemSel']/a[contains(text(), 'Quotes')]")
-	@FindBy(css = "[id^='navigationitemNAVIGATIONITEMID_7bc2f6d569b74f2fa33d38fa9962135c_2230']")
+	@FindBy(xpath = "//a[@aria-posinset='3' and contains(text(),'Quotes')]")
 	public WebElement Quotes;
+	
+	@FindBy(xpath = "//button[contains(text(),'Add')]")
+	public WebElement goToCPQ;
 	
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
