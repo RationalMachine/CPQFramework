@@ -81,7 +81,7 @@ public class LoggingIn extends Constants{
     }
 
     protected String takeScreenShot(String methodName) {
-        String path = "./screenshots/" + methodName + ".png";
+        String path = "/Users/himrekha/IdeaProjects/CPQFlintFramework/test-output/" + methodName + ".png";
         try {
             File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(screenshotFile, new File(path));
