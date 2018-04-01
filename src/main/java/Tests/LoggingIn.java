@@ -137,7 +137,7 @@ public class LoggingIn extends Constants{
              //Pop up handler for the new Tab
              //Good source for learning about JVM Uncaught Exception Handling
              //https://medium.com/yohan-liyanage/know-the-jvm-series-1-the-uncaught-exception-handler-beb3ea1edb14
-        /    //In case you want to avoid try{}catch(){} in these kind of cases
+             //In case you want to avoid try{}catch(){} in these kind of cases
              try {
             	 cpq.waitUntilClickable(driver, 60, loginPage.popUpHtml);
             	 loginPage.popUpHtml.click();
