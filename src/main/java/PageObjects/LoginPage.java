@@ -25,6 +25,12 @@ public class LoginPage {
 	
 	@FindBy(xpath = "//button[contains(text(),'No')]")
 	public WebElement popUpHtml;
+
+	@FindBy(id = "__panel0-CollapsedImg")
+	public WebElement customerDropdown;
+
+    @FindBy(xpath = "//a[contains(text(),'Accounts')]")
+    public WebElement accounts;
 	
 	@FindBy(xpath = "//span[contains(@class,'sapUiUfdShellHeadUsrItmExp')]")
 	public WebElement dropDown;

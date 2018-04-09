@@ -1,8 +1,11 @@
 package Tests;
 
+import PageObjects.*;
 import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -11,13 +14,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.io.FileUtils;
+import org.testng.Assert;
 import org.testng.ITestResult;
+
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+
 
 public class Constants{
 
@@ -27,6 +33,11 @@ public class Constants{
     //Begins the ExtentReport stuff
     //private static ExtentTest test;
     //private static ExtentReports extent;
+    public static ExtentReports extent;
+    public static ExtentTest test;
+    public static Constants cpq = new Constants();
+
+
 
     //@BeforeSuite
     public void startSuite(){
@@ -69,14 +80,15 @@ public class Constants{
         }
         return path;
     }
-    ////////
+
+
 
     public WebDriver setup(){
-        //System.setProperty("webdriver.chrome.driver",readPropFile("chromepath"));
-        //driver = new ChromeDriver();
-    		System.setProperty("webdriver.gecko.driver", readPropFile("firefoxpath"));
-        driver = new FirefoxDriver();
-    		driver.get(readPropFile("url"));
+        System.setProperty("webdriver.chrome.driver",readPropFile("chromepath"));
+        driver = new ChromeDriver();
+        //System.setProperty("webdriver.gecko.driver", readPropFile("firefoxpath"));
+        //driver = new FirefoxDriver();
+        driver.get(readPropFile("url"));
         driver.manage().window().maximize();
         return driver;
     }

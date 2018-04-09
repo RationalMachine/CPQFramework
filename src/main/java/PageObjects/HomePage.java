@@ -38,7 +38,8 @@ public class HomePage {
 	public WebElement testNam;
 	
 	//@FindBy(xpath = "//div[@role='Main']//li[@class='sapUiUx3NavBarItemSel']/a[contains(text(), 'Quotes')]")
-	@FindBy(xpath = "//div[@role='Navigation']/nav[@id='__bar13']/ul/li/a[contains(text(),'Quotes')]")
+	//@FindBy(xpath = "//div[@role='Main']/div[2]/div[@role='Navigation']/nav/ul/li/a[@aria-posinset='3' and contains(text(),'Quotes')]")
+	@FindBy(xpath = "(//*[contains(@id,'__bar')]/ul/li[4]/a[@aria-setsize='18'])[3]")
 	public WebElement Quotes;
 	
 	@FindBy(xpath = "//button[contains(text(),'Add')]")
