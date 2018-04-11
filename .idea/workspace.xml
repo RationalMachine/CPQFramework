@@ -1,42 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36eef6d8-5447-4efc-aa0f-536443c10b73" name="Default" comment="Working code. Do not touch.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_jvm_deps_1_0_5.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_gherkin_2_12_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BaseClass.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/modules/LoginAction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/step_definitions/RunCukesTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/step_definitions/SignInSteps.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/SignIn.feature" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_core_1_2_5.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_junit_1_2_5.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_cukes_cucumber_picocontainer_1_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_12.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_29.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_websocket_8_1_9_v20130131.xml" afterPath="" />
+    <list default="true" id="36eef6d8-5447-4efc-aa0f-536443c10b73" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CPQFlintFramework.iml" afterPath="$PROJECT_DIR$/CPQFlintFramework.iml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/AccountsPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/HomePage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/LoginPage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/MohitPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/OpportunityPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Test_NamPage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/BaseClass.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/BrowserSpawn.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/LoginCPQ.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/validateCurrency.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/PageObjects/LoginPage.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/MohitPage.class" afterPath="$PROJECT_DIR$/target/classes/PageObjects/MohitPage.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/Tests/Constants.class" afterPath="$PROJECT_DIR$/target/classes/Tests/Constants.class" />
       <change beforePath="$PROJECT_DIR$/target/classes/Tests/LoggingIn.class" afterPath="$PROJECT_DIR$/target/classes/Tests/LoggingIn.class" />
-      <change beforePath="$PROJECT_DIR$/test-output/Extent.html" afterPath="$PROJECT_DIR$/test-output/Extent.html" />
-      <change beforePath="$PROJECT_DIR$/test-output/login.png" afterPath="$PROJECT_DIR$/test-output/login.png" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" afterPath="$PROJECT_DIR$/testng.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -119,7 +89,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="workingChrome" />
+        <entry key="$PROJECT_DIR$" value="donottouch" />
       </map>
     </option>
   </component>
@@ -580,7 +550,7 @@
       <workItem from="1523368677231" duration="895000" />
       <workItem from="1523370852772" duration="1821000" />
       <workItem from="1523447535339" duration="808000" />
-      <workItem from="1523448488375" duration="7891000" />
+      <workItem from="1523448488375" duration="7961000" />
     </task>
     <task id="LOCAL-00001" summary="Changed screenshot path to something relative to the Extent.html">
       <created>1522562660204</created>
@@ -631,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523448393017</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Working code. Do not touch.">
+      <created>1523458537480</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523458537480</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -667,7 +644,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93777000" />
+    <option name="totallyTimeSpent" value="93847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1260" height="669" extended-state="0" />
