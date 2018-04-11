@@ -20,46 +20,44 @@ public class LoggingIn extends Constants {
 
     @BeforeSuite
     public void runBeforeEverything() {
+        driver = cpq.setup();
         startSuite();
     }
 
     //This considers each method present for reporting
     //created startBeforeMethod() in Constants
-    @BeforeMethod
-    public void runBeforeTest(Method method) {
-        //test = extent.createTest(method.getName());
-        String name = method.getName();
-        startBeforeMethod(name);
-    }
+    //Move it to Constants.java
 
     //Sets up the WebDriver by calling setup() method from Constants.java
-    @BeforeTest
-    public void setUp() {
-        driver = cpq.setup();
-    }
+    //@BeforeTest
+    //public void setUp() {
+    //   driver = cpq.setup();
+    //}
 
 
     @AfterMethod
     public void testEndRun(ITestResult result) throws IOException {
         runAfterTesting(result);
+        System.out.println("Ending the method");
     }
 
-    @AfterTest(dependsOnGroups = "Commerce")
-    public void tearDown() {
-    driver.quit();
-    }
+    //Move driver.quit to @AfterSuite
+    //@AfterTest(dependsOnGroups = "Commerce")
+    //public void tearDown() {
+    //driver.quit();
+    //}
 
     //Appends all the ended tests to the HTML report
     @AfterSuite(dependsOnGroups = "Commerce")
     public void afterSuiteMethod() {
         extent.flush();
+        driver.quit();
     }
 
 
     //Method to login to CPQ
     @Test(groups = "Login")
     //Removing login() and shifting it to Constants class. It's public void here.
-    //Removing void and replacing with Object
     public void login() {
 
         //Login to C4C
