@@ -16,12 +16,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.commons.io.FileUtils;
 import org.testng.Assert;
 import org.testng.ITestResult;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.lang.reflect.Method;
 import java.util.Properties;
 
 
@@ -37,6 +40,14 @@ public class Constants{
     public static ExtentTest test;
     public static Constants cpq = new Constants();
 
+
+    @BeforeMethod
+    public void runBeforeTest(Method method) {
+        //test = extent.createTest(method.getName());
+        String name = method.getName();
+        startBeforeMethod(name);
+        System.out.println("Running the method");
+    }
 
 
     //@BeforeSuite
@@ -94,7 +105,7 @@ public class Constants{
     }
 
 
-    public void waitUntilVisible(WebDriver driver, int seconds, WebElement element){
+    public static void waitUntilVisible(WebDriver driver, int seconds, WebElement element){
         try {
             WebDriverWait wait = new WebDriverWait(driver, seconds);
             wait.until(ExpectedConditions.visibilityOf(element));
@@ -109,7 +120,7 @@ public class Constants{
        
 
     //method for WebDriverWait until object is clickable
-    public void waitUntilClickable(WebDriver driver, int seconds, WebElement element){
+    public static void waitUntilClickable(WebDriver driver, int seconds, WebElement element){
         try {
             WebDriverWait wait = new WebDriverWait(driver, seconds);
             wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -137,6 +148,7 @@ public class Constants{
             e.printStackTrace();
         }
     }
+
     
     public void takeScreenshot(WebDriver driver, String path) {
 		try {
