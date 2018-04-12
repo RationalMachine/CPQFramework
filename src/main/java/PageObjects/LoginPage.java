@@ -73,4 +73,16 @@ public class LoginPage extends BaseClass{
     @FindBy(xpath = "//span[text()='Add']")
     public static WebElement add;
 
+    @FindBy(xpath = "//img[contains(@id,'coltlogo')]")
+    public static WebElement coltlogo;
+
+    @FindBy(xpath = "//select[contains(@name,'__change_currency')]")
+    public static WebElement changeCurrency;
+
+    @FindBy(id = "change_currency")
+    public static WebElement changeButton;
+
+    @FindBy(id = "readonly_1_currency_t")
+    public static WebElement readCurrency;
+
 }

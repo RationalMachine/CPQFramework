@@ -41,45 +41,6 @@ public class Constants{
     public static Constants cpq = new Constants();
 
 
-    @BeforeMethod
-    public void runBeforeTest(Method method) {
-        //test = extent.createTest(method.getName());
-        String name = method.getName();
-        startBeforeMethod(name);
-        System.out.println("Running the method");
-    }
-
-
-    //@BeforeSuite
-    public void startSuite(){
-        LoggingIn.extent = new ExtentReports();
-        ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("/Users/himrekha/IdeaProjects/CPQFlintFramework/test-output/Extent.html");
-        LoggingIn.extent.attachReporter(htmlReporter);
-    }
-
-    //@BeforeMethod
-    public void startBeforeMethod(String methodName) {
-        LoggingIn.test = LoggingIn.extent.createTest(methodName);
-        //startBeforeMethod(String method.getName());
-    }
-
-    public void runAfterTesting(ITestResult result) throws IOException {
-        switch (result.getStatus()) {
-            case ITestResult.FAILURE:
-                LoggingIn.test.fail(result.getThrowable());
-                LoggingIn.test.fail("Screenshot below: " + LoggingIn.test.addScreenCaptureFromPath(takeScreenShot(result.getMethod().getMethodName())));
-                break;
-            case ITestResult.SKIP:
-                LoggingIn.test.skip(result.getThrowable());
-                break;
-            case ITestResult.SUCCESS:
-                LoggingIn.test.pass("Passed");
-                break;
-            default:
-                break;
-        }
-        LoggingIn.extent.flush();
-    }
 
     public String takeScreenShot(String methodName){
         String path = "/Users/himrekha/IdeaProjects/CPQFlintFramework/test-output/" + methodName + ".png";

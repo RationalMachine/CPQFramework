@@ -81,7 +81,7 @@ public class LoginAction {
 
         LoginPage.opportunities.click();
 
-        cpq.waitUntilVisible(driver, 30, LoginPage.searchIcon);
+        Constants.waitUntilVisible(driver, 30, LoginPage.searchIcon);
 
         try {
             Thread.sleep(10000);
@@ -95,16 +95,42 @@ public class LoginAction {
 
         LoginPage.searchField.sendKeys("Test_Nam");
 
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         Constants.waitUntilClickable(driver, 20, LoginPage.searchIconShowResult);
         LoginPage.searchIconShowResult.click();
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         Constants.waitUntilVisible(driver, 60, LoginPage.quotes);
         //Click on Quotes
         LoginPage.quotes.click();
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         //wait for Add
         Constants.waitUntilVisible(driver, 40, LoginPage.add);
         //Click on ADD
         LoginPage.add.click();
+
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
 
         Reporter.log("SignIn Action is successfully perfomred");
 

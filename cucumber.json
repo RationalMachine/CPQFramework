@@ -1,0 +1,80 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10516033826,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Sign In",
+        "description": "",
+        "id": "c4c-login;sign-in",
+        "after": [
+          {
+            "result": {
+              "duration": 604031806,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3438517426,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the C4C login page",
+            "match": {
+              "location": "SignInSteps.i_open_the_C4C_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 163596765628,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I sign in",
+            "match": {
+              "location": "SignInSteps.i_sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3283543000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I assert if I am inside CPQ",
+            "match": {
+              "location": "SignInSteps.i_assert_if_im_in_cpq()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "C4C Login",
+    "description": "",
+    "id": "c4c-login",
+    "keyword": "Feature",
+    "uri": "/Users/himrekha/IdeaProjects/CPQFlintFramework/src/main/resources/SignIn.feature"
+  }
+]
