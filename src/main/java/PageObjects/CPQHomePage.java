@@ -6,23 +6,28 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class CPQHomePage {
+public class CPQHomePage extends BaseClass{
 
-
-	
-	@FindBy(id="return_to_c4c")
-	public WebElement returnToC4C;
-
-	@FindBy(id="add_product")
-	public WebElement addProduct;
-
-	@FindBy(id="readonly_1_currency_t")
-    public WebElement currency;
-	
-	public CPQHomePage(WebDriver driver) {
-
-	    PageFactory.initElements(driver, this);
+	public CPQHomePage(WebDriver driver){
+		super(driver);
 	}
 
+	@FindBy(id="add_product")
+	public static WebElement addProduct;
+
+	@FindBy(xpath = "//a[contains(text(),'Ethernet')]")
+	public static WebElement ethernet;
+
+	@FindBy(xpath = "//a[contains(text(),'Ethernet Spoke')]")
+	public static WebElement spoke;
+
+	@FindBy(id = "siteAddressAEnd")
+	public static WebElement addressfieldA;
+
+	@FindBy(id = "start_over")
+	public static WebElement startOver;
+
+	@FindBy(xpath = "//p[contains(text(),'not a valid option')]")
+    public static WebElement hubMessage;
 
 }
