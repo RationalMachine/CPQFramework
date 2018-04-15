@@ -75,10 +75,24 @@ public class Constants{
             e.printStackTrace();
         }
     }
-    
-    
-  
-       
+
+    public static void waitForBrowserReadystateComplete(WebDriver webDriver) {
+        for (int a=0; a<20; a++) {
+            JavascriptExecutor javascriptExecutor = (JavascriptExecutor) webDriver;
+            if (javascriptExecutor.executeScript("return document.readyState")
+                    .toString().equals("complete")) {
+                break;
+            }
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+
 
     //method for WebDriverWait until object is clickable
     public static void waitUntilClickable(WebDriver driver, int seconds, WebElement element){

@@ -8,8 +8,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
+import java.util.Arrays;
 
 public class Hooks{
     public static WebDriver driver;
@@ -25,6 +27,8 @@ public class Hooks{
         System.setProperty("webdriver.chrome.driver", "/Users/himrekha/Downloads/chromedriver");
         driver = new ChromeDriver();
         driver.manage().deleteAllCookies();
+        //DesiredCapabilities caps = DesiredCapabilities.chrome();
+        //caps.setCapability("chrome.switches", Arrays.asList("--enable-javascript"));
         driver.manage().window().maximize();
     }
 

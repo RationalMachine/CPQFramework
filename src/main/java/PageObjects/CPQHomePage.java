@@ -84,12 +84,43 @@ public class CPQHomePage extends BaseClass{
 	@FindBy(xpath = "(//td[contains(text(),'Outside Business Hours Installation Secondary')])[1]")
     public static WebElement obhTableCheckSecond;
 
-
-
 	@FindBy(id = "add_to_transaction")
     public static WebElement saveToQuote;
 
 	@FindBy(xpath = "(//span[contains(@id,'readonly_2_product')])[1]")
     public static WebElement productTable;
 
+    /**
+     * The following element definitions are for Commerce Page features.
+     * Incorporating in one single Page Object.
+     * But the best practice is to have separate PageObjects for
+     * Commerce Page/Product Selection Page/Address Page/Site Details
+     */
+
+    @FindBy(xpath = "//div[contains(@class,'field')]/span[@id='readonly_1_dealClass_t']")
+    public static WebElement dealClass;
+
+    @FindBy(css = "#readonly_1_go0Approval_t")
+    public static WebElement goApproval;
+
+    @FindBy(xpath = "(//div[@class='field']/span)[18]")
+    public static WebElement legalComplexity;
+
+    @FindBy(css = "#readonly_1_pricingSegment_t")
+    public static WebElement pricingSegment;
+
+    @FindBy(css = "#readonly_1_status_t")
+    public static WebElement stage;
+
+    @FindBy(xpath = "//select[contains(@name,'quoteType')]")
+    public static WebElement quoteType;
+
+    @FindBy(xpath = "readonly_1_quoteID_t")
+    public static WebElement quoteId;
+
+    @FindBy(css = "#readonly_1_newLogo_t")
+    public static WebElement newlogo;
+
+    @FindBy(css = "#readonly_1_opportunityName_t")
+    public static WebElement opponame;
 }
