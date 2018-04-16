@@ -17,7 +17,7 @@ public class Hooks{
     public static WebDriver driver;
 
 
-    @Before
+    @Before("@commerce")
     /**
      * Delete all cookies at the start of each scenario to avoid
      * shared state between tests
@@ -26,14 +26,14 @@ public class Hooks{
         System.out.println("Called openBrowser");
         System.setProperty("webdriver.chrome.driver", "/Users/himrekha/Downloads/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().deleteAllCookies();
+        //driver.manage().deleteAllCookies();
         //DesiredCapabilities caps = DesiredCapabilities.chrome();
         //caps.setCapability("chrome.switches", Arrays.asList("--enable-javascript"));
         driver.manage().window().maximize();
     }
 
 
-    @After
+    @After("@commerce")
     /**
      * Embed a screenshot in test report if test is marked as failed
      */

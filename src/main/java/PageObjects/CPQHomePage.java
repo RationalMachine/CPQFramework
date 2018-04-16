@@ -123,4 +123,10 @@ public class CPQHomePage extends BaseClass{
 
     @FindBy(css = "#readonly_1_opportunityName_t")
     public static WebElement opponame;
+
+    @FindBy(xpath = "//span[contains(text(),'Approval')]")
+    public static WebElement approvaltab;
+
+    @FindBy(id = "submit_to_approval")
+    public static WebElement approvalbtn;
 }

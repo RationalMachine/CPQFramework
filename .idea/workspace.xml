@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36eef6d8-5447-4efc-aa0f-536443c10b73" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/step_definitions/CommercePageValidations.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/Commerce.feature" />
+    <list default="true" id="36eef6d8-5447-4efc-aa0f-536443c10b73" name="Default" comment="Cucumber implementation.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/CPQHomePage.java" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/CPQHomePage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tests/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/Tests/Constants.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/step_definitions/CommercePageValidations.java" afterPath="$PROJECT_DIR$/src/main/java/step_definitions/CommercePageValidations.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java" afterPath="$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AddHub.feature" afterPath="$PROJECT_DIR$/src/main/resources/AddHub.feature" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Commerce.feature" afterPath="$PROJECT_DIR$/src/main/resources/Commerce.feature" />
       <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/CPQHomePage.class" afterPath="$PROJECT_DIR$/target/classes/PageObjects/CPQHomePage.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tests/Constants.class" afterPath="$PROJECT_DIR$/target/classes/Tests/Constants.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,28 +36,38 @@
       <file leaf-file-name="CPQHomePage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PageObjects/CPQHomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="99" column="86" lean-forward="false" selection-start-line="99" selection-start-column="86" selection-end-line="99" selection-end-column="86" />
+            <state relative-caret-position="227">
+              <caret line="127" column="41" lean-forward="false" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Commerce.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/Commerce.feature">
+      <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            <state relative-caret-position="239">
+              <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommercePageValidations.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunCukesTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/RunCukesTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommercePageValidations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/CommercePageValidations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="313">
+              <caret line="89" column="63" lean-forward="false" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#576#577#0" expanded="true" />
@@ -68,34 +77,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddHub.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/AddHub.feature">
+      <file leaf-file-name="Commerce.feature" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Commerce.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state relative-caret-position="324">
+              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CanAddHubProduct.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/CanAddHubProduct.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="231" column="9" lean-forward="true" selection-start-line="227" selection-start-column="8" selection-end-line="231" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -168,14 +155,14 @@
         <option value="$PROJECT_DIR$/src/main/java/step_definitions/ChangeCurrencySteps.java" />
         <option value="$PROJECT_DIR$/src/main/resources/SpokeWithoutHub.feature" />
         <option value="$PROJECT_DIR$/src/main/java/step_definitions/SpokeWithoutHubProd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/step_definitions/RunCukesTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/step_definitions/CanAddHubProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/AddHub.feature" />
         <option value="$PROJECT_DIR$/src/main/java/Tests/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/Commerce.feature" />
+        <option value="$PROJECT_DIR$/src/main/resources/AddHub.feature" />
         <option value="$PROJECT_DIR$/src/main/java/PageObjects/CPQHomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/step_definitions/CommercePageValidations.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/Commerce.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/step_definitions/RunCukesTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java" />
       </list>
     </option>
   </component>
@@ -595,7 +582,7 @@
       <workItem from="1523368677231" duration="895000" />
       <workItem from="1523370852772" duration="1821000" />
       <workItem from="1523447535339" duration="808000" />
-      <workItem from="1523448488375" duration="81740000" />
+      <workItem from="1523448488375" duration="88043000" />
     </task>
     <task id="LOCAL-00001" summary="Changed screenshot path to something relative to the Extent.html">
       <created>1522562660204</created>
@@ -681,43 +668,50 @@
       <option name="project" value="LOCAL" />
       <updated>1523686836922</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Cucumber implementation.">
+      <created>1523777510519</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1523777510520</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 10m 44s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 13h 40m 47s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 22m 58s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 14h 15m 11s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 27m 25s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 14h 19m 11s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 30m 20s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 14h 48m 40s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 34m 30s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 14h 57m 12s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 43m 42s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 15h 01m 18s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 48m 59s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 15h 09m 02s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 52m 51s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 15h 16m 33s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 12h 56m 41s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 15h 20m 16s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
-    <history-entry file="Feature__Commerce - 2018.04.15 at 13h 00m 13s.xml">
+    <history-entry file="Feature__Commerce - 2018.04.15 at 15h 24m 25s.xml">
       <configuration name="Feature: Commerce" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167626000" />
+    <option name="totallyTimeSpent" value="173929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1260" height="669" extended-state="0" />
@@ -995,14 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SignIn.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ChangingCurrency.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1029,14 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/RunCukesTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -1055,40 +1033,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/CanAddHubProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="231" column="9" lean-forward="true" selection-start-line="227" selection-start-column="8" selection-end-line="231" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Commerce.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjects/CPQHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="99" column="86" lean-forward="false" selection-start-line="99" selection-start-column="86" selection-end-line="99" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/modules/LoginAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1097,23 +1041,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/CanAddHubProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="231" column="9" lean-forward="true" selection-start-line="227" selection-start-column="8" selection-end-line="231" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/AddHub.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="245">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PageObjects/CPQHomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="127" column="41" lean-forward="false" selection-start-line="127" selection-start-column="41" selection-end-line="127" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/RunCukesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/SignIn.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/CommercePageValidations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="51" column="29" lean-forward="false" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        <state relative-caret-position="313">
+          <caret line="89" column="63" lean-forward="false" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#576#577#0" expanded="true" />
             <element signature="e#613#614#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Commerce.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

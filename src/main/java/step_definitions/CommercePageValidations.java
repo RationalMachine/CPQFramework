@@ -77,4 +77,16 @@ public class CommercePageValidations {
     public void newlogo()throws Throwable{
         Assert.assertEquals(CPQHomePage.newlogo.getText(), "N");
     }
+
+    //Scenario 2:
+    @Then("^user navigates to the approval tab$")
+    public void approval_nav()throws Throwable{
+        CPQHomePage.approvaltab.click();
+        Thread.sleep(10000);
+    }
+
+    @Then("^user asserts if submit to approval button exists$")
+    public void approval_btn()throws Throwable{
+        Assert.assertTrue(CPQHomePage.approvalbtn.isDisplayed());
+    }
 }

@@ -18,3 +18,4 @@ Feature: User can add Hub
     Then user clicks update button
     Then user clicks save to quote
     Then user asserts CPQ page has the product added
+
