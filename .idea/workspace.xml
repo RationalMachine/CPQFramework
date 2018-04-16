@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36eef6d8-5447-4efc-aa0f-536443c10b73" name="Default" comment="Cucumber implementation.">
+    <list default="true" id="36eef6d8-5447-4efc-aa0f-536443c10b73" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/CPQHomePage.java" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/CPQHomePage.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/step_definitions/CommercePageValidations.java" afterPath="$PROJECT_DIR$/src/main/java/step_definitions/CommercePageValidations.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java" afterPath="$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AddHub.feature" afterPath="$PROJECT_DIR$/src/main/resources/AddHub.feature" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Commerce.feature" afterPath="$PROJECT_DIR$/src/main/resources/Commerce.feature" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/CPQHomePage.class" afterPath="$PROJECT_DIR$/target/classes/PageObjects/CPQHomePage.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +40,8 @@
       <file leaf-file-name="Hooks.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+            <state relative-caret-position="275">
+              <caret line="30" column="83" lean-forward="false" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -113,7 +107,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="donottouch" />
+        <entry key="$PROJECT_DIR$" value="cucumber" />
       </map>
     </option>
   </component>
@@ -582,7 +576,7 @@
       <workItem from="1523368677231" duration="895000" />
       <workItem from="1523370852772" duration="1821000" />
       <workItem from="1523447535339" duration="808000" />
-      <workItem from="1523448488375" duration="88043000" />
+      <workItem from="1523448488375" duration="88219000" />
     </task>
     <task id="LOCAL-00001" summary="Changed screenshot path to something relative to the Extent.html">
       <created>1522562660204</created>
@@ -675,7 +669,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523777510520</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Cucumber implementation.">
+      <created>1523884927460</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1523884927460</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -711,7 +712,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173929000" />
+    <option name="totallyTimeSpent" value="174105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1260" height="669" extended-state="0" />
@@ -1105,8 +1106,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/step_definitions/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        <state relative-caret-position="275">
+          <caret line="30" column="83" lean-forward="false" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
           <folding />
         </state>
       </provider>
