@@ -1,4 +1,4 @@
-@commerce
+
 Feature: Commerce page should have proper info
 
 

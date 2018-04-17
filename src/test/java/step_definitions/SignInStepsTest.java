@@ -12,17 +12,17 @@ import org.testng.Assert;
 import java.util.HashMap;
 import java.util.List;
 
-public class SignInSteps {
+public class SignInStepsTest {
 
     public WebDriver driver;
     public List<HashMap<String,String>> datamap;
 
-    public SignInSteps(){
+    public SignInStepsTest(){
         driver = Hooks.driver;
     }
 
-    @When("^I open the C4C login page$")
-    public void i_open_the_C4C_login_page() throws Throwable{
+    @When("^login to C4C$")
+    public void i_open_the_C4C_login() throws Throwable{
         driver.get("https://my325462-sso.crm.ondemand.com/sap/byd/runtime");
     }
 
